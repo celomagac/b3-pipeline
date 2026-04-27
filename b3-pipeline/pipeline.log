@@ -1,0 +1,77 @@
+2026-04-27 00:52:32,246 | INFO     | pipeline | ============================================================
+2026-04-27 00:52:32,247 | INFO     | pipeline | PIPELINE INICIADO — 2026-04-27 00:52:32
+2026-04-27 00:52:32,247 | INFO     | pipeline | ============================================================
+2026-04-27 00:52:32,247 | INFO     | pipeline | [1/4] COLETA
+2026-04-27 00:52:32,248 | INFO     | collector.fetch | Iniciando coleta: 10 tickers | período: 2y
+2026-04-27 00:52:32,252 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: 'C:\Users\Marcelo\AppData\Local\py-yfinance' reason: [WinError 183] Não é possível criar um arquivo já existente: 'C:\\Users\\Marcelo\\AppData\\Local\\py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2026-04-27 00:52:32,252 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: 'C:\Users\Marcelo\AppData\Local\py-yfinance' reason: [WinError 183] Não é possível criar um arquivo já existente: 'C:\\Users\\Marcelo\\AppData\\Local\\py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2026-04-27 00:52:32,252 | INFO     | yfinance | Failed to create TzCache, reason: Error creating TzCache folder: 'C:\Users\Marcelo\AppData\Local\py-yfinance' reason: [WinError 183] Não é possível criar um arquivo já existente: 'C:\\Users\\Marcelo\\AppData\\Local\\py-yfinance'. TzCache will not be used. Tip: You can direct cache to use a different location with 'set_tz_cache_location(mylocation)'
+2026-04-27 00:52:37,166 | INFO     | collector.fetch |   PETR4.SA: 500 linhas coletadas
+2026-04-27 00:52:37,167 | INFO     | collector.fetch |   VALE3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,168 | INFO     | collector.fetch |   ITUB4.SA: 500 linhas coletadas
+2026-04-27 00:52:37,169 | INFO     | collector.fetch |   BBDC4.SA: 500 linhas coletadas
+2026-04-27 00:52:37,170 | INFO     | collector.fetch |   ABEV3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,174 | INFO     | collector.fetch |   MGLU3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,175 | INFO     | collector.fetch |   WEGE3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,176 | INFO     | collector.fetch |   RENT3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,178 | INFO     | collector.fetch |   LREN3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,179 | INFO     | collector.fetch |   SUZB3.SA: 500 linhas coletadas
+2026-04-27 00:52:37,181 | INFO     | collector.fetch | Coleta concluída: 5000 linhas no total
+2026-04-27 00:52:37,181 | INFO     | pipeline | [2/4] LIMPEZA
+2026-04-27 00:52:37,182 | INFO     | processor.cleaner | Iniciando limpeza: 5000 linhas recebidas
+2026-04-27 00:52:37,203 | INFO     | processor.cleaner | Limpeza concluída: 5000 linhas após tratamento
+2026-04-27 00:52:37,203 | INFO     | pipeline | [3/4] INDICADORES
+2026-04-27 00:52:37,203 | INFO     | processor.indicators | Calculando indicadores técnicos...
+2026-04-27 00:52:37,209 | INFO     | processor.indicators |   SMA 20 e SMA 50 calculados
+2026-04-27 00:52:37,220 | INFO     | processor.indicators |   RSI 14 calculado
+2026-04-27 00:52:37,225 | INFO     | processor.indicators |   Bandas de Bollinger (20) calculadas
+2026-04-27 00:52:37,230 | INFO     | processor.indicators |   Retorno diário e acumulado calculados
+2026-04-27 00:52:37,233 | INFO     | processor.indicators |   Volume médio e razão calculados
+2026-04-27 00:52:37,236 | INFO     | processor.indicators |   Sinais de cruzamento e RSI calculados
+2026-04-27 00:52:37,236 | INFO     | processor.indicators | Indicadores adicionados: 22 colunas no total
+2026-04-27 00:52:37,236 | INFO     | pipeline | [4/4] ARMAZENAMENTO
+2026-04-27 00:52:37,788 | INFO     | storage.writer | Dados salvos em Parquet particionado: data/processed/
+2026-04-27 00:52:37,864 | INFO     | storage.writer | Resumo salvo em: data/processed/summary.csv
+2026-04-27 00:52:37,867 | INFO     | pipeline | ============================================================
+2026-04-27 00:52:37,870 | INFO     | pipeline | PIPELINE CONCLUÍDO em 5.62s
+2026-04-27 00:52:37,871 | INFO     | pipeline |   Linhas processadas : 5,000
+2026-04-27 00:52:37,872 | INFO     | pipeline |   Tickers            : 10
+2026-04-27 00:52:37,875 | INFO     | pipeline |   Colunas geradas    : 22
+2026-04-27 00:52:37,877 | INFO     | pipeline | ============================================================
+2026-04-27 00:53:10,572 | INFO     | pipeline | ============================================================
+2026-04-27 00:53:10,573 | INFO     | pipeline | PIPELINE INICIADO — 2026-04-27 00:53:10
+2026-04-27 00:53:10,573 | INFO     | pipeline | ============================================================
+2026-04-27 00:53:10,573 | INFO     | pipeline | [1/4] COLETA
+2026-04-27 00:53:10,574 | INFO     | collector.fetch | Iniciando coleta: 10 tickers | período: 2y
+2026-04-27 00:53:11,720 | INFO     | collector.fetch |   PETR4.SA: 500 linhas coletadas
+2026-04-27 00:53:11,721 | INFO     | collector.fetch |   VALE3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,722 | INFO     | collector.fetch |   ITUB4.SA: 500 linhas coletadas
+2026-04-27 00:53:11,723 | INFO     | collector.fetch |   BBDC4.SA: 500 linhas coletadas
+2026-04-27 00:53:11,724 | INFO     | collector.fetch |   ABEV3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,725 | INFO     | collector.fetch |   MGLU3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,726 | INFO     | collector.fetch |   WEGE3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,726 | INFO     | collector.fetch |   RENT3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,728 | INFO     | collector.fetch |   LREN3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,729 | INFO     | collector.fetch |   SUZB3.SA: 500 linhas coletadas
+2026-04-27 00:53:11,730 | INFO     | collector.fetch | Coleta concluída: 5000 linhas no total
+2026-04-27 00:53:11,730 | INFO     | pipeline | [2/4] LIMPEZA
+2026-04-27 00:53:11,730 | INFO     | processor.cleaner | Iniciando limpeza: 5000 linhas recebidas
+2026-04-27 00:53:11,744 | INFO     | processor.cleaner | Limpeza concluída: 5000 linhas após tratamento
+2026-04-27 00:53:11,745 | INFO     | pipeline | [3/4] INDICADORES
+2026-04-27 00:53:11,745 | INFO     | processor.indicators | Calculando indicadores técnicos...
+2026-04-27 00:53:11,750 | INFO     | processor.indicators |   SMA 20 e SMA 50 calculados
+2026-04-27 00:53:11,774 | INFO     | processor.indicators |   RSI 14 calculado
+2026-04-27 00:53:11,780 | INFO     | processor.indicators |   Bandas de Bollinger (20) calculadas
+2026-04-27 00:53:11,786 | INFO     | processor.indicators |   Retorno diário e acumulado calculados
+2026-04-27 00:53:11,790 | INFO     | processor.indicators |   Volume médio e razão calculados
+2026-04-27 00:53:11,793 | INFO     | processor.indicators |   Sinais de cruzamento e RSI calculados
+2026-04-27 00:53:11,794 | INFO     | processor.indicators | Indicadores adicionados: 22 colunas no total
+2026-04-27 00:53:11,794 | INFO     | pipeline | [4/4] ARMAZENAMENTO
+2026-04-27 00:53:11,859 | INFO     | storage.writer | Dados salvos em Parquet particionado: data/processed/
+2026-04-27 00:53:11,874 | INFO     | storage.writer | Resumo salvo em: data/processed/summary.csv
+2026-04-27 00:53:11,875 | INFO     | pipeline | ============================================================
+2026-04-27 00:53:11,876 | INFO     | pipeline | PIPELINE CONCLUÍDO em 1.3s
+2026-04-27 00:53:11,876 | INFO     | pipeline |   Linhas processadas : 5,000
+2026-04-27 00:53:11,877 | INFO     | pipeline |   Tickers            : 10
+2026-04-27 00:53:11,877 | INFO     | pipeline |   Colunas geradas    : 22
+2026-04-27 00:53:11,878 | INFO     | pipeline | ============================================================
