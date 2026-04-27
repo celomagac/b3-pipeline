@@ -47,7 +47,7 @@ b3-pipeline/
 
 ```bash
 # 1. Clone e instale as dependências
-git clone https://github.com/seu-usuario/b3-pipeline.git
+git clone https://github.com/celomagac/b3-pipeline.git
 cd b3-pipeline
 pip install -r requirements.txt
 
